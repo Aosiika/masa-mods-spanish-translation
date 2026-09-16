@@ -42,7 +42,16 @@ python scripts/validate_translations.py
 If you see any warnings or errors regarding placeholders or missing keys, fix them before committing. All checks should pass with exit code `0`.
 
 #### 4. Submitting Upstream to Sakura Ryoko
-When your translation is ready:
+When your translation is ready, you can submit upstream either automatically or manually:
+
+**Option A (Automated):**
+Run our submission script:
+```bash
+python scripts/submit_upstream_prs.py
+```
+This automatically forks the repository, creates a dedicated branch (`translation/es_es`), commits the updated `es_es.json`, and opens the Pull Request with complete metadata and reference links.
+
+**Option B (Manual):**
 1. Fork Sakura Ryoko's repository for the mod (e.g., `https://github.com/sakura-ryoko/malilib`).
 2. Create a new branch based on the active development branch (e.g., `DEV/26.3`).
 3. Copy your updated `es_es.json`:
@@ -91,7 +100,16 @@ python scripts/validate_translations.py
 Si el validador señala errores de formato o claves faltantes, revísalos y corrígelos. El script debe terminar con código de salida `0`.
 
 #### 4. Enviar el Pull Request a Sakura Ryoko
-Cuando la traducción esté lista:
+Cuando la traducción esté lista, puedes enviarla de forma automática o manual:
+
+**Opción A (Automática):**
+Ejecuta nuestro script de publicación:
+```bash
+python scripts/submit_upstream_prs.py
+```
+El script creará automáticamente el fork en tu cuenta de GitHub, preparará la rama `translation/es_es`, subirá el archivo `es_es.json` actualizado y abrirá el Pull Request con la descripción y el enlace a este repositorio.
+
+**Opción B (Manual):**
 1. Haz un fork del repositorio de Sakura Ryoko del mod que corresponda (por ejemplo, `https://github.com/sakura-ryoko/malilib`).
 2. Crea una rama basada en la rama activa de desarrollo (por ejemplo, `DEV/26.3`).
 3. Copia tu archivo `es_es.json` actualizado:

@@ -55,6 +55,9 @@ These scripts require Python 3.8+ (no third-party dependencies):
    - Minecraft color and formatting codes (`§a`, `§c`, `§r`) are preserved.
    - UTF-8 encoding without BOM.
 
+3. **`python scripts/submit_upstream_prs.py`**
+   Automates forking the upstream repositories, pushing updated `es_es.json` files to dedicated branches, and opening upstream Pull Requests directly to Sakura Ryoko's active development branches.
+
 ### How to Contribute
 Check `CONTRIBUTING.md` for our step-by-step guide to contributing and sending Pull Requests to Sakura Ryoko.
 
@@ -109,6 +112,9 @@ Los scripts funcionan con Python 3.8 o superior (solo biblioteca estándar, sin 
    - Que las variables (`%s`, `%d`, `{0}`) no se hayan roto ni traducido por error.
    - Que los códigos de color y formato de Minecraft (`§a`, `§c`, `§r`) sigan en su lugar.
    - Codificación UTF-8 pura sin BOM.
+
+3. **`python scripts/submit_upstream_prs.py`**
+   Automatiza la creación de forks, sube las traducciones a ramas dedicadas y abre los Pull Requests directamente hacia las ramas de desarrollo de Sakura Ryoko.
 
 ### Cómo Contribuir
 Consulta `CONTRIBUTING.md` para ver la guía paso a paso para editar traducciones y abrir Pull Requests limpios en los repositorios de Sakura Ryoko.
